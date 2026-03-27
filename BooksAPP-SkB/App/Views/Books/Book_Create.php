@@ -12,28 +12,28 @@
             <p>Vyplňte knihu a uložte do databáze.</p>
         </div>
         <div>
-            <form action="">
+            <form action="/Books/Books_list.php" method="POST" enctype="multipart/form-data">
                 <div>
                     <div>
                         <label for="title">Název Knihy <span>*</span></label>
-                        <input type="text" id="title" name="Title" required>
+                        <input type="text" id="title" name="book_title" required>
                     </div>
                 </div>
                 <div>
                     <div>
                         <label for="autor">Autor Knihy <span>*</span> </label>
-                        <input type="text" id="autor" name="Autor" required>
+                        <input type="text" id="autor" name="book_author" required>
                     </div>
                 </div>
                 <div>
                     <div>
                         <label for="rok_vydani">Rok Vydání <span>*</span> </label>
-                        <input type="text" id="rok_vydani" name="Rok_vydani" placeholder="Rok výdeje" required>
+                        <input type="text" id="rok_vydani" name="published_year" placeholder="Rok výdeje" required>
                     </div>
                 </div>
                 <div>
                         <label for="cena">Cena<span></span> </label>
-                        <input type="number" id="cena" name="Cena">
+                        <input type="number" id="cena" name="price">
                 </div>
                 <div>
                         <label for="ISBN">ISBN <span>*</span> </label>
